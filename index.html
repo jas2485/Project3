@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Lab Website</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <!-- Responsive Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#home">
+                <i class="bi bi-laptop"></i> TechSolutions
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#showcase">Showcase</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Hero Section: Brief info, image, and sign-up button -->
+    <section id="home" class="hero-section">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h1 class="display-4 fw-bold mb-3">Welcome to TechSolutions</h1>
+                    <p class="lead mb-4">We provide innovative technology solutions to help your business grow and succeed in the digital age. Our expert team delivers cutting-edge services tailored to your unique needs.</p>
+                    <button class="btn btn-primary btn-lg">Sign Up Today</button>
+                </div>
+                <div class="col-lg-6">
+                    <img src="assets/images/hero-image.jpg" alt="Technology Solutions" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section: 3 cards with icon, heading, paragraph, and button -->
+    <section id="features" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Core Features</h2>
+            <div class="row g-4">
+                
+                <!-- Feature Card 1: Fast Performance -->
+                <div class="col-md-4">
+                    <div class="card h-100 text-center border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="bi bi-lightning-charge-fill text-warning"></i>
+                            </div>
+                            <h3 class="h5 card-title mb-3">Lightning Fast</h3>
+                            <p class="card-text">Experience blazing fast performance with our optimized infrastructure. Your applications will load instantly and run smoothly across all devices.</p>
+                            <button class="btn btn-outline-warning mt-3">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature Card 2: Secure Platform -->
+                <div class="col-md-4">
+                    <div class="card h-100 text-center border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="bi bi-shield-lock-fill text-success"></i>
+                            </div>
+                            <h3 class="h5 card-title mb-3">Bank-Level Security</h3>
+                            <p class="card-text">Your data is protected with enterprise-grade encryption and security protocols. We ensure complete privacy and data protection at all times.</p>
+                            <button class="btn btn-outline-success mt-3">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature Card 3: 24/7 Support -->
+                <div class="col-md-4">
+                    <div class="card h-100 text-center border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="bi bi-headset text-info"></i>
+                            </div>
+                            <h3 class="h5 card-title mb-3">24/7 Support</h3>
+                            <p class="card-text">Our dedicated support team is available around the clock to assist you. Get help whenever you need it through chat, email, or phone.</p>
+                            <button class="btn btn-outline-info mt-3">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase Section: Two rows with alternating text and image layout -->
+    <section id="showcase" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Why Choose Us</h2>
+            
+            <!-- First Row: Description on left, image on right -->
+            <div class="row align-items-center mb-5 pb-5">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h3 class="mb-3">Innovative Technology Solutions</h3>
+                    <p class="mb-3">We leverage the latest technologies and industry best practices to deliver innovative solutions that drive your business forward. Our team stays ahead of technology trends to provide you with competitive advantages.</p>
+                    <p>From cloud computing to artificial intelligence, we implement cutting-edge tools that transform how you do business. Let us help you embrace digital transformation and achieve your goals.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="assets/images/showcase1.jpg" alt="Innovation" class="img-fluid rounded shadow">
+                </div>
+            </div>
+
+            <!-- Second Row: Image on left, description on right -->
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0 order-lg-1 order-2">
+                    <img src="assets/images/showcase2.jpg" alt="Quality Service" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6 order-lg-2 order-1 mb-4 mb-lg-0">
+                    <h3 class="mb-3">Exceptional Quality & Service</h3>
+                    <p class="mb-3">Quality is at the heart of everything we do. Our rigorous quality assurance processes ensure that every project meets the highest standards of excellence. We are committed to delivering solutions that exceed your expectations.</p>
+                    <p>With years of industry experience and hundreds of successful projects, we have earned the trust of clients worldwide. Partner with us for reliable, professional service you can count on.</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Team Section: 4 people with image, heading, and paragraph -->
+    <section id="team" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Meet Our Expert Team</h2>
+            <div class="row g-4">
+                
+                <!-- Team Member 1 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/images/team1.jpg" class="card-img-top team-img" alt="Sarah Johnson">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-2">Sarah Johnson</h5>
+                            <p class="text-muted small mb-2">CEO & Founder</p>
+                            <p class="card-text small">With over 15 years of experience in technology leadership, Sarah drives our vision and strategic direction with passion and innovation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/images/team2.jpg" class="card-img-top team-img" alt="Michael Chen">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-2">Michael Chen</h5>
+                            <p class="text-muted small mb-2">Chief Technology Officer</p>
+                            <p class="card-text small">Michael leads our technical team with expertise in cloud architecture, ensuring we deliver cutting-edge solutions to our clients.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/images/team3.jpg" class="card-img-top team-img" alt="Emily Rodriguez">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-2">Emily Rodriguez</h5>
+                            <p class="text-muted small mb-2">Head of Design</p>
+                            <p class="card-text small">Emily creates stunning user experiences that combine aesthetic beauty with intuitive functionality, delighting users worldwide.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/images/team4.jpg" class="card-img-top team-img" alt="David Williams">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-2">David Williams</h5>
+                            <p class="text-muted small mb-2">Marketing Director</p>
+                            <p class="card-text small">David develops innovative marketing strategies that connect our brand with clients and drive sustainable business growth.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Carousel Section: Image carousel with indicators and navigation arrows -->
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Project Gallery</h2>
+            
+            <!-- Bootstrap Carousel Component -->
+            <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+                
+                <!-- Carousel Indicators (Navigation Lines) -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <!-- Carousel Slides -->
+                <div class="carousel-inner">
+                    
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <img src="assets/images/carousel1.jpg" class="d-block w-100 carousel-image" alt="Project 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>E-Commerce Platform</h5>
+                            <p>A modern, scalable e-commerce solution built with the latest technologies.</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <img src="assets/images/carousel2.jpg" class="d-block w-100 carousel-image" alt="Project 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Mobile Application</h5>
+                            <p>Cross-platform mobile app with seamless user experience and performance.</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <img src="assets/images/carousel3.jpg" class="d-block w-100 carousel-image" alt="Project 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Enterprise Dashboard</h5>
+                            <p>Comprehensive analytics dashboard for real-time business insights.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Carousel Controls (Left/Right Arrows) -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Accordion Section: FAQ with 4+ collapsible items -->
+    <section id="faq" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+            
+            <!-- Bootstrap Accordion Component -->
+            <div class="accordion" id="faqAccordion">
+                
+                <!-- Accordion Item 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            What services does your company offer?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            We offer a comprehensive range of technology services including web development, mobile application development, cloud solutions, UI/UX design, digital marketing, and IT consulting. Our expert team works closely with clients to deliver customized solutions that meet their specific business needs and objectives.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            How long does a typical project take to complete?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Project timelines vary depending on the scope and complexity. A simple website typically takes 2-4 weeks, while more complex applications can take 2-6 months. We provide a detailed project timeline during our initial consultation and maintain transparent communication throughout the development process to ensure timely delivery.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            What is your pricing structure?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Our pricing is project-based and tailored to your specific requirements. We offer competitive rates and flexible payment options. Each project receives a custom quote based on features, complexity, timeline, and resources needed. Contact us for a free consultation and detailed proposal for your project.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Do you provide post-launch support and maintenance?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, we offer comprehensive post-launch support and maintenance packages. This includes regular updates, security patches, bug fixes, performance monitoring, and technical support. We provide different maintenance tiers to suit various needs and budgets, ensuring your application continues to run smoothly and securely.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section: Form and contact information -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Get In Touch</h2>
+            <div class="row">
+                
+                <!-- Contact Form -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h4 class="card-title mb-4">Send Us a Message</h4>
+                            
+                            <!-- Bootstrap Form Component -->
+                            <form id="contactForm">
+                                
+                                <div class="mb-3">
+                                    <label for="fullName" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="your.email@example.com" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone" placeholder="+1 (555) 123-4567">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <select class="form-select" id="subject">
+                                        <option value="">Select a subject</option>
+                                        <option value="general">General Inquiry</option>
+                                        <option value="support">Technical Support</option>
+                                        <option value="sales">Sales Question</option>
+                                        <option value="partnership">Partnership Opportunity</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Tell us about your project or inquiry..." required></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <h4 class="card-title mb-4">Contact Information</h4>
+                            
+                            <!-- Contact Details List -->
+                            <ul class="list-unstyled contact-list">
+                                <li class="mb-4">
+                                    <div class="d-flex align-items-start">
+                                        <i class="bi bi-geo-alt-fill text-primary fs-4 me-3"></i>
+                                        <div>
+                                            <h6 class="mb-1">Our Office</h6>
+                                            <p class="mb-0 text-muted">123 Technology Drive, Suite 500<br>Toronto, ON M5H 2N2<br>Canada</p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="mb-4">
+                                    <div class="d-flex align-items-start">
+                                        <i class="bi bi-telephone-fill text-success fs-4 me-3"></i>
+                                        <div>
+                                            <h6 class="mb-1">Phone</h6>
+                                            <p class="mb-0 text-muted">+1 (416) 555-0123<br>+1 (416) 555-0124</p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="mb-4">
+                                    <div class="d-flex align-items-start">
+                                        <i class="bi bi-envelope-fill text-info fs-4 me-3"></i>
+                                        <div>
+                                            <h6 class="mb-1">Email</h6>
+                                            <p class="mb-0 text-muted">info@techsolutions.com<br>support@techsolutions.com</p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="mb-4">
+                                    <div class="d-flex align-items-start">
+                                        <i class="bi bi-clock-fill text-warning fs-4 me-3"></i>
+                                        <div>
+                                            <h6 class="mb-1">Business Hours</h6>
+                                            <p class="mb-0 text-muted">Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <!-- Social Media Links -->
+                            <div class="mt-4">
+                                <h6 class="mb-3">Connect With Us</h6>
+                                <div class="social-links">
+                                    <a href="#" class="btn btn-outline-primary btn-sm me-2 mb-2">
+                                        <i class="bi bi-facebook"></i> Facebook
+                                    </a>
+                                    <a href="#" class="btn btn-outline-info btn-sm me-2 mb-2">
+                                        <i class="bi bi-twitter"></i> Twitter
+                                    </a>
+                                    <a href="#" class="btn btn-outline-danger btn-sm me-2 mb-2">
+                                        <i class="bi bi-instagram"></i> Instagram
+                                    </a>
+                                    <a href="#" class="btn btn-outline-primary btn-sm mb-2">
+                                        <i class="bi bi-linkedin"></i> LinkedIn
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-2">&copy; 2024 TechSolutions. All Rights Reserved.</p>
+            <p class="mb-0 small">Built with Bootstrap 5 | Designed for Excellence</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

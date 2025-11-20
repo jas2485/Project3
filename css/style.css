@@ -1,0 +1,460 @@
+/* ========================================
+   Bootstrap Lab Website - Custom Styles
+   Using HSL, RGB, and Hex color values only
+   ======================================== */
+
+/* CSS Variables for Color Theme */
+:root {
+    --primary-blue: hsl(211, 100%, 50%);
+    --primary-dark: hsl(211, 100%, 40%);
+    --success-green: hsl(134, 61%, 41%);
+    --info-cyan: hsl(188, 78%, 41%);
+    --warning-yellow: hsl(45, 100%, 51%);
+    --danger-red: hsl(354, 70%, 54%);
+    --dark-gray: hsl(210, 11%, 15%);
+    --light-gray: hsl(210, 17%, 98%);
+    --medium-gray: hsl(210, 14%, 89%);
+    --text-dark: #2c3e50;
+    --text-muted: #6c757d;
+    --white: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --gradient-purple: linear-gradient(135deg, hsl(250, 69%, 61%) 0%, hsl(290, 49%, 54%) 100%);
+    --gradient-blue: linear-gradient(135deg, hsl(211, 100%, 50%) 0%, hsl(203, 92%, 44%) 100%);
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    overflow-x: hidden;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Section Spacing */
+section {
+    scroll-margin-top: 70px;
+}
+
+/* Hero Section */
+.hero-section {
+    background: var(--gradient-purple);
+    color: var(--white);
+    padding: 80px 0;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-section h1 {
+    color: var(--white);
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero-section .lead {
+    color: hsla(0, 0%, 100%, 0.95);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.hero-section img {
+    border: 4px solid hsla(0, 0%, 100%, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hero-section img:hover {
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+}
+
+/* Feature Cards Section */
+#features .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#features .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px var(--shadow-color);
+}
+
+.feature-icon i {
+    font-size: 3.5rem;
+    transition: transform 0.3s ease;
+}
+
+#features .card:hover .feature-icon i {
+    transform: scale(1.15) rotate(5deg);
+}
+
+/* Showcase Section */
+#showcase img {
+    border-radius: 12px;
+    box-shadow: 0 10px 30px var(--shadow-color);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+#showcase img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+#showcase h3 {
+    color: var(--primary-dark);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#showcase p {
+    color: var(--text-muted);
+    line-height: 1.8;
+}
+
+/* Team Section */
+.team-img {
+    height: 280px;
+    object-fit: cover;
+    background: var(--gradient-blue);
+}
+
+#team .card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#team .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px var(--shadow-color);
+}
+
+#team .card-title {
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+/* Carousel Section */
+.carousel-image {
+    height: 500px;
+    object-fit: cover;
+    background: var(--medium-gray);
+    border-radius: 8px;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+}
+
+.carousel-caption h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+/* Accordion Section */
+.accordion-button {
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: hsla(211, 100%, 50%, 0.1);
+    color: var(--primary-dark);
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem hsla(211, 100%, 50%, 0.25);
+    border-color: var(--primary-blue);
+}
+
+.accordion-body {
+    padding: 1.5rem;
+    line-height: 1.8;
+    color: var(--text-muted);
+}
+
+/* Contact Section */
+#contact .form-control,
+#contact .form-select {
+    border: 2px solid var(--medium-gray);
+    padding: 12px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contact .form-control:focus,
+#contact .form-select:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 0.2rem hsla(211, 100%, 50%, 0.25);
+}
+
+#contact .form-label {
+    font-weight: 500;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+}
+
+.contact-list li {
+    padding: 15px;
+    background-color: hsla(210, 17%, 98%, 0.8);
+    border-left: 4px solid var(--primary-blue);
+    border-radius: 8px;
+}
+
+.contact-list i {
+    min-width: 30px;
+}
+
+.contact-list h6 {
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+/* Navigation Bar */
+.navbar {
+    box-shadow: 0 2px 15px var(--shadow-color);
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05);
+}
+
+.nav-link {
+    font-weight: 500;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: var(--white) !important;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: var(--white);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 70%;
+}
+
+/* Button Styles */
+.btn {
+    padding: 12px 30px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px var(--shadow-color);
+}
+
+.btn-primary {
+    background: var(--gradient-blue);
+    border: none;
+}
+
+.btn-lg {
+    padding: 15px 40px;
+    font-size: 1.1rem;
+}
+
+/* Section Headings */
+section h2 {
+    font-weight: 700;
+    color: var(--text-dark);
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: var(--gradient-blue);
+    border-radius: 2px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-gray);
+    margin-top: 60px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Card Shadows */
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.5rem var(--shadow-color) !important;
+}
+
+.shadow {
+    box-shadow: 0 0.5rem 1.5rem var(--shadow-color) !important;
+}
+
+.shadow-lg {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+/* Background Colors */
+.bg-light {
+    background-color: var(--light-gray) !important;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .hero-section {
+        min-height: 500px;
+        padding: 60px 0;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+        min-height: auto;
+        padding: 40px 0;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .carousel-image {
+        height: 300px;
+    }
+    
+    .team-img {
+        height: 220px;
+    }
+    
+    section h2 {
+        font-size: 1.75rem;
+    }
+    
+    .feature-icon i {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section h1 {
+        font-size: 1.75rem;
+    }
+    
+    .btn-lg {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+    
+    .carousel-image {
+        height: 250px;
+    }
+}
+
+/* Animation Classes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover Effects */
+.card,
+.btn,
+img {
+    transition: all 0.3s ease;
+}
+
+/* Focus Styles */
+:focus {
+    outline: 3px solid hsla(211, 100%, 50%, 0.3);
+    outline-offset: 2px;
+}
+
+/* Text Colors */
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+/* Social Links */
+.social-links a {
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+}
+
+/* Utility Classes */
+.cursor-pointer {
+    cursor: pointer;
+}
